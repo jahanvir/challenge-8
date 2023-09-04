@@ -1,40 +1,88 @@
--- ds.page: Welcome to doc-site
+-- import: fifthtry.github.io/button
+
+-- ds.page: 
+-- ftd.column: 
+width.fixed.px: 600
+background.solid: #222
+padding-vertical.px: 50
+border-radius.px: 20
+
+-- ftd.column: 
+width.fixed.px: 500
+align-self: center
 
 
-⚡️ `doc-site` will help you create a beautiful documentation site in no time.
+-- field:
+label: Name
+placeholder: Enter your name
 
-It provides out-of-the-box documentation features that can be used to create any
-kind of site(personal website, blog, etc).
+-- field:
+label: City
+placeholder: Enter your city 
 
-[Click here](https://fastn-community.github.io/doc-site/) to read doc-site
-documentation.
+-- field:
+label: Education
+placeholder: Enter your education details
 
--- ds.h3: 🚀 Fast Track 
+-- field:
+label: Job Profile
+placeholder: Enter your Job Profile
 
-Create your first fastn [web-site](https://fastn.com/expander/hello-world/-/build/) 
-project in just 5 minutes!
+-- field:
+label: Phone Number
+placeholder: Enter your phone number
 
--- ds.h3: 🌟 Whats next?
+-- field:
+label: Github account URL
+placeholder: Enter your Github account url
 
-Create your first page. 
-[Click here to know more](https://fastn-community.github.io/doc-site/components/page/).
+-- field:
+label: Why you want to become fastn ambassador
+placeholder: Write your answer here
+height: 100
 
--- ds.h3: 👀 Want to learn more?
+-- field:
+label: How can you help fastn grow
+placeholder: Write your answer here
+height: 100
 
-Feel free to check [our expander course](https://fastn.com/expander/) or jump
-into our [FifthTry Discord server](https://discord.gg/bucrdvptYd).
+-- ftd.row: 
+align-self: end 
+margin-vertical.px: 10
 
+-- button.button: Submit
+role: tertiary
+medium: true
+link: #
 
--- ds.h3: 🎯 Used by?
+-- end: ftd.row
 
-Our all documentation sites uses this `doc-site` theme.
+-- end: ftd.column
 
-- [fastn.com](https://fastn.com/home/)
-- [FifthTry.com](https://www.fifthtry.com/)
-
--- ds.h2: Learn fastn and become a pro?
-
-You are one click away, just check [our documentation](https://fastn.com/) and 
-dont forget to jump into our [FifthTry Discord server](https://discord.gg/bucrdvptYd).
+-- end: ftd.column
 
 -- end: ds.page
+
+-- component field:
+string label: Default Label
+string placeholder: Default place holder
+integer height: 30
+
+-- ftd.column: 
+
+-- ftd.text: $field.label
+color: white
+padding-vertical.px: 10
+style: bold
+
+-- ftd.text-input:
+placeholder: $field.placeholder
+role: $inherited.types.copy-small
+padding.px: 10
+width.fixed.px: 500
+background.solid: black
+height.fixed.px: $field.height
+
+-- end: ftd.column
+
+-- end: field

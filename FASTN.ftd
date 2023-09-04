@@ -6,6 +6,7 @@ favicon: /-/jahanvir.github.io/challenge8/favicon.ico
 -- fastn.dependency: fastn-community.github.io/doc-site as doc-site
 -- fastn.dependency: fastn-community.github.io/footer
 -- fastn.dependency: fastn-community.github.io/roboto-typography
+-- fastn.dependency: fifthtry.github.io/button
 
 -- fastn.auto-import: jahanvir.github.io/challenge8/FASTN/ds
 -- fastn.auto-import: jahanvir.github.io/challenge8/assets
@@ -13,6 +14,6 @@ favicon: /-/jahanvir.github.io/challenge8/favicon.ico
 
 -- fastn.sitemap:
 
-# Home: index.html
+;; # Home: index.html
 
-- Right Sidebar Sample: /sidebar/
+;; - Right Sidebar Sample: /sidebar/
